@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Yash Verma. Building real software with AI, learning to code every day.">
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <radialGradient id="orbA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbC" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#EC4899" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#C4B5FD"/>
+      <stop offset="0.7" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05050A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#05050A" stop-opacity="0.9"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="340" rx="24"/></clipPath>
+    <!-- typewriter reveal for the three rotating lines -->
+    <clipPath id="type1"><rect x="80" y="214" height="40" width="0"><animate attributeName="width" values="0;760;760;0;0" keyTimes="0;0.12;0.28;0.33;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="type2"><rect x="80" y="214" height="40" width="0"><animate attributeName="width" values="0;0;760;760;0;0" keyTimes="0;0.33;0.45;0.61;0.66;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="type3"><rect x="80" y="214" height="40" width="0"><animate attributeName="width" values="0;0;760;760;0" keyTimes="0;0.66;0.78;0.95;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+    .float1 { animation: f1 14s ease-in-out infinite; }
+    .float2 { animation: f2 18s ease-in-out infinite; }
+    .float3 { animation: f3 16s ease-in-out infinite; }
+    @keyframes f1 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(120px,40px); } }
+    @keyframes f2 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-140px,-30px); } }
+    @keyframes f3 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(60px,-50px); } }
+    .blink { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .scan { animation: scan 7s linear infinite; }
+    @keyframes scan { 0% { transform: translateX(-300px); } 100% { transform: translateX(1500px); } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="#05050A"/>
+    <circle class="float1" cx="230" cy="90" r="260" fill="url(#orbA)"/>
+    <circle class="float2" cx="980" cy="260" r="240" fill="url(#orbB)"/>
+    <circle class="float3" cx="720" cy="40" r="200" fill="url(#orbC)"/>
+    <rect width="1200" height="340" fill="url(#dots)"/>
+    <rect class="scan" x="0" y="0" width="160" height="340" fill="#FFFFFF" fill-opacity="0.025" transform="skewX(-20)"/>
+    <rect width="1200" height="340" fill="url(#fade)"/>
+
+    <!-- status chip -->
+    <g transform="translate(940 46)">
+      <rect width="196" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <circle cx="22" cy="20" r="5" fill="#34D399"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+      <text x="36" y="25.5" class="mono" font-size="13" fill="#D1FAE5">building in public</text>
+    </g>
+
+    <!-- prompt line -->
+    <text x="80" y="82" class="mono" font-size="16" fill="#A78BFA">~/yash <tspan fill="#64748B">$</tspan> <tspan fill="#E2E8F0">whoami</tspan></text>
+
+    <!-- name -->
+    <text x="76" y="168" class="sans" font-size="84" font-weight="800" letter-spacing="-3" fill="url(#name)">Yash Verma</text>
+
+    <!-- rotating typed lines -->
+    <g class="mono" font-size="24" fill="#CBD5E1">
+      <text x="80" y="242" clip-path="url(#type1)"><tspan fill="#8B5CF6">&gt;</tspan> I build real, working software with AI.</text>
+      <text x="80" y="242" clip-path="url(#type2)"><tspan fill="#22D3EE">&gt;</tspan> Learning to code properly, one project at a time.</text>
+      <text x="80" y="242" clip-path="url(#type3)"><tspan fill="#EC4899">&gt;</tspan> Currently shipping: CutClip, an AI video clipper.</text>
+    </g>
+    <rect class="blink" x="80" y="256" width="14" height="3" fill="#E2E8F0"/>
+
+    <!-- footer tags -->
+    <g class="mono" font-size="13" fill="#94A3B8">
+      <text x="80" y="306">AI-assisted builder</text>
+      <text x="252" y="306" fill="#334155">/</text>
+      <text x="272" y="306">aspiring developer</text>
+      <text x="434" y="306" fill="#334155">/</text>
+      <text x="454" y="306">learning every day</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+</svg>
