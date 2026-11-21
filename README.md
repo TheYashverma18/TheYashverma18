@@ -4,7 +4,7 @@
 
 ## Hey, I'm Yash 👋
 
-A creative developer and an engineering student at **DSCE**, Bengaluru.*
+A creative developer and an engineering student at **DSCE**, Bengaluru.
 
 I enjoy building digital products that combine thoughtful design.
 
