@@ -9,6 +9,7 @@ A creative developer and an engineering student at **DSCE**, Bengaluru.
 I enjoy building digital products that combine thoughtful design.
 
 Just started my open source journey.
+
 ---
 
 <p align="center"><sub>Thanks for stopping by. Go drink some water. 💧</sub></p>
